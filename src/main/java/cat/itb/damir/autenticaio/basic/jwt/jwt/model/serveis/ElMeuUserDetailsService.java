@@ -1,5 +1,6 @@
 package cat.itb.damir.autenticaio.basic.jwt.jwt.model.serveis;
 
+import cat.itb.damir.autenticaio.basic.jwt.jwt.model.entitats.Usuari;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,4 +21,8 @@ public class ElMeuUserDetailsService implements UserDetailsService {
     public UserDetails loadUserById(Long id){
         return serveiUsuarisUserDetails.consultarPerId(id);
     }
+
+//    public UserDetails createNewUser(Usuari newUser){
+//        return serveiUsuarisUserDetails.crearNouUsuari(newUser);
+//    }
 }
