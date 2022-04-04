@@ -49,7 +49,7 @@ public class ControladorRegistreLoginUsuaris {
 
     @GetMapping("/login")
     public UsuariConsultaDTO login(@AuthenticationPrincipal Usuari usu){
-        UsuariConsultaDTO usu2=new UsuariConsultaDTO(usu.getUsername(),usu.getAvatar(),usu.getRol());
+        UsuariConsultaDTO usu2 = new UsuariConsultaDTO(usu.getUsername(),usu.getAvatar(),usu.getRol());
            return usu2;
     }
 
